@@ -1,3 +1,6 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -24,5 +27,18 @@ require("lazy").setup({
 	{
 		"ThePrimeagen/vim-be-good",
 		cmd = "VimBeGood"
-	}
+	},
+    {
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        cmd = "NvimTreeToggle",
+        dependencies = 
+        {
+        "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+        require("nvim-tree").setup {}
+        end,
+        vim.keymap.set("n",":ee", "<cmd>NvimTreeToggle<CR>") -- Toggle file explorer on 'ee' key press
+    }
 })
