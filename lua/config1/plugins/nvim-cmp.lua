@@ -11,7 +11,7 @@ return {
     },
 
     config = function()
-    
+
     local cmp = require("cmp")
     vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
@@ -56,8 +56,10 @@ return {
             -- documentation = cmp.config.window.bordered(),
         },
         mapping = cmp.mapping.preset.insert({
-            ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-            ["<C-f>"] = cmp.mapping.scroll_docs(4),
+            ["<C-k>"] = cmp.mapping.select_prev_item(),
+		    ["<C-j>"] = cmp.mapping.select_next_item(),
+            ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }),
+            ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
             ["<C-Space>"] = cmp.mapping.complete(),
             ["<C-e>"] = cmp.mapping.abort(),
             ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
@@ -73,7 +75,6 @@ return {
             { name = "path" },
            }
         ),
-
         formatting = {
             fields = { "kind", "abbr", "menu" },
             format = function(entry, vim_item)
