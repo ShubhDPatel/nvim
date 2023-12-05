@@ -12,6 +12,6 @@ return {
         ensure_installed = { "lua_ls" }
         })
         
-        require("lspconfig").sumneko_lua.setup {}
+        require("lspconfig").lua_ls.setup {}
     end,
 }
