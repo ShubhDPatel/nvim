@@ -1,11 +1,9 @@
 return {
-    "luisiacc/gruvbox-baby",
-    priority = 1000, 
-   
+    'eddyekofo94/gruvbox-flat.nvim',
+    priority = 1000,
+    enabled = true,
     config = function()
-
-        vim.g.gruvbox_baby_comment_style = "medium", -- Makes it so that comments are not italics
-
-        vim.cmd([[colorscheme gruvbox-baby]])
+        vim.gruvbox_italic_comments = false -- Makes comments not italics
+        vim.cmd([[colorscheme gruvbox-flat]])
     end,
 }
