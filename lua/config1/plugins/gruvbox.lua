@@ -7,6 +7,6 @@ return {
         vim.g.gruvbox_italic_keywords = false -- Makes keywords not italics
 
         vim.cmd([[colorscheme gruvbox-flat]])
-        -- vim.cmd[[highlight TSVariable guifg=#85cae6]]
+        vim.cmd[[highlight TSVariable guifg=#a2bbe0]]
     end,
 }
