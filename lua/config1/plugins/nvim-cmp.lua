@@ -9,7 +9,9 @@ return {
             "saadparwaiz1/cmp_luasnip", -- snippet completions
             "L3MON4D3/LuaSnip", -- snippet engine
     },
-
+   
+    event = {"InsertEnter", "CmdlineEnter"}, -- Load the plugin when entering insert mode
+    
     config = function()
 
     local cmp = require("cmp")
