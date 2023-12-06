@@ -14,11 +14,9 @@ return {
                 prompt_prefix = " ",
                 selection_caret = " ",
                 path_display = { "smart" },
-            },
 
-            TelescopeBorder = {
-                fg = "#ea6962",
-                bg = "#58dee8",
+                border = {},
+                borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
             },
         }
         require('telescope').load_extension('fzf')
@@ -28,5 +26,6 @@ return {
         vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
         vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
         vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
     end,
 }
