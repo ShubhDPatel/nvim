@@ -12,7 +12,15 @@ return {
         ensure_installed = { "lua_ls", "clangd" }
         })
         
-        require("lspconfig").lua_ls.setup {}
+        require("lspconfig").lua_ls.setup {
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = {"vim"},
+                    }
+                }
+            }
+        }
         require("lspconfig").clangd.setup {}
     end,
 }
