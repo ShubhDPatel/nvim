@@ -1,3 +1,4 @@
 # Dependencies:
 ## Requires neovim version v0.9.0 or better
-## sudo apt install zip (unless you already have it)
+## sudo apt install zip 
+## sudo apt install ripgrep
