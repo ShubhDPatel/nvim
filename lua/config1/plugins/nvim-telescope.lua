@@ -6,19 +6,10 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim",
         'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build',
-        'BurntSushi/ripgrep',
     },
     config = function()
-        require('telescope').setup {
-            defaults = {
-                prompt_prefix = " ",
-                selection_caret = " ",
-                path_display = { "smart" },
-
-                border = {},
-                borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
-            },
-        }
+        require('telescope').setup {}
+        
         require('telescope').load_extension('fzf')
 
         local builtin = require('telescope.builtin')
