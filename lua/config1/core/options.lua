@@ -12,3 +12,4 @@ vim.o.wrap = false
 -- Set listchars globally
 vim.opt.list = true
 vim.opt.listchars = { space = '·', tab = '> ', extends = '|' }
+vim.opt.clipboard = 'unnamedplus'
