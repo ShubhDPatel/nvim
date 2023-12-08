@@ -21,6 +21,7 @@ return {
                 },
 
                 cpp = {
+                    require("formatter.filetypes.cpp").clang_format,
                 },
 
                 -- Use the special "*" filetype for defining formatter configurations on
