@@ -20,6 +20,9 @@ return {
                     require("formatter.filetypes.lua").stylua,
                 },
 
+                cpp = {
+                },
+
                 -- Use the special "*" filetype for defining formatter configurations on
                 -- any filetype
                 ["*"] = {
