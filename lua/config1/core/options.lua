@@ -9,7 +9,7 @@ vim.opt.softtabstop = 4
 vim.opt.termguicolors = true
 vim.o.wrap = false
 vim.opt.smartindent = true
-vim.opt.signcolumn = "yes"
+--vim.opt.signcolumn = "yes"
 
 -- Set listchars globally
 vim.opt.list = true
