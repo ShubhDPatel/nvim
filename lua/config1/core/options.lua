@@ -8,6 +8,7 @@ vim.opt.smarttab = true
 vim.opt.softtabstop = 4
 vim.opt.termguicolors = true
 vim.o.wrap = false
+vim.opt.smartindent = true
 
 -- Set listchars globally
 vim.opt.list = true

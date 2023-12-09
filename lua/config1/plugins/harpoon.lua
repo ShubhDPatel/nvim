@@ -5,8 +5,8 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim",
     },
-    
-    keys = {"<leader>a", "<leader>e"},
+
+    keys = {"<leader>a", "<leader>h"},
 
     config = function()
     local harpoon = require("harpoon")
@@ -16,7 +16,7 @@ return {
     -- REQUIRED
 
     vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end)
-    vim.keymap.set("n", "<leader>e", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+    vim.keymap.set("n", "<leader>h", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
     -- vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
     -- vim.keymap.set("n", "<C-t>", function() harpoon:list():select(2) end)
