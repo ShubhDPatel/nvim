@@ -28,14 +28,14 @@ return {
             }
         }
         require("lspconfig").clangd.setup {
-            local root_files = {
+            root_pattern = {
                 '.clangd',
                 '.clang-tidy',
                 '.clang-format',
                 'compile_commands.json',
-  'compile_flags.txt',
-  'configure.ac', -- AutoTools
-}
+                'compile_flags.txt',
+                'configure.ac', -- AutoTools
+            },
         }
     end,
 }
