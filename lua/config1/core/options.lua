@@ -10,6 +10,7 @@ vim.opt.termguicolors = true
 vim.o.wrap = false
 vim.opt.smartindent = true
 --vim.opt.signcolumn = "yes"
+vim.opt.laststatus = 3
 
 -- Set listchars globally
 vim.opt.list = true
