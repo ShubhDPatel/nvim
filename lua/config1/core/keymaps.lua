@@ -1,6 +1,9 @@
 vim.keymap.set("n",":ee", "<cmd>NvimTreeToggle<CR>") -- Toggle file explorer on 'ee' key press
 vim.g.mapleader = ' '
 
+-- When in terminal, you can press esc to go into normal mode
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
+
 -- Already set in the plugin:
 -- vim.keymap.set('n', "<C-h>", nvim_tmux_nav.NvimTmuxNavigateLeft)
 -- vim.keymap.set('n', "<C-j>", nvim_tmux_nav.NvimTmuxNavigateDown)
