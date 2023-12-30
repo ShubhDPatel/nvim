@@ -11,7 +11,7 @@ return {
         "onsails/lspkind.nvim",
     },
 
-    event = { "InsertEnter", "CmdlineEnter" }, -- Load the plugin when entering insert mode
+    event = { "InsertEnter", "CmdlineEnter" }, -- Load the plugin when entering insert mode or command line mode
 
     config = function()
         local cmp = require("cmp")
