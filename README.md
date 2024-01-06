@@ -11,5 +11,6 @@
 ## Uses github copilot and openAi key. This setup gets the key from a password manager. Tutorial: https://www.youtube.com/watch?v=7k0KZsheLP4&t=260s
 
 ## If error for fzf not found, than go into .local/share/nvim/lazy/telescope-fzf-native.nvim, than run make
+## If on WSL, don't forget to remove the terminal keybinding for control-v so you can enter in visual block mode in neovim
 
 ### Includes my .clang-format file
