@@ -37,5 +37,8 @@ return {
                 'configure.ac', -- AutoTools
             },
         }
+        require("lspconfig").pyright.setup {
+            filetypes = { "python" },
+        }
     end,
 }
