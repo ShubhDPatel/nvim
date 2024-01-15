@@ -18,3 +18,6 @@ vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
 -- Allows to move code up and down in visual mode using J and K
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+-- Allows to create a new tab using <leader>t
+vim.keymap.set('n', '<leader>t', ':tabnew<CR>')
