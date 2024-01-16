@@ -1,5 +1,5 @@
 -- Already set in plugin file:
--- vim.keymap.set("c", "ee", "NvimTreeToggle<CR>"), -- Toggle file explorer on 'ee' key press
+-- vim.api.nvim_set_keymap('n', '<leader>ee', ':NvimTreeToggle<CR>', { noremap = true, silent = true }),
 
 -- Set leader key to space
 vim.g.mapleader = ' '

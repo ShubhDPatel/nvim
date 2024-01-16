@@ -9,5 +9,5 @@ return {
     config = function()
         require("nvim-tree").setup({})
     end,
-    vim.keymap.set("c", "ee", "NvimTreeToggle<CR>"), -- Toggle file explorer on 'ee' key press
+    vim.api.nvim_set_keymap('n', '<leader>ee', ':NvimTreeToggle<CR>', { noremap = true, silent = true }),
 }
