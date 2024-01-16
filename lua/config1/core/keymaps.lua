@@ -21,3 +21,6 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- Allows to create a new tab using <leader>t
 vim.keymap.set('n', '<leader>t', ':tabnew<CR>')
+
+-- Allows to use telescope to find sessions using <leader>fs (Already in possession.nvim file)
+vim.api.nvim_set_keymap('n', '<leader>fs', ':Telescope possession list<CR>', { noremap = true, silent = true })
