@@ -23,4 +23,5 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 vim.keymap.set('n', '<leader>t', ':tabnew<CR>')
 
 -- Allows to use telescope to find sessions using <leader>fs (Already in possession.nvim file)
+-- You can use <leader>ff and <leader>fg to find files and grep respectively
 vim.api.nvim_set_keymap('n', '<leader>fs', ':Telescope possession list<CR>', { noremap = true, silent = true })
