@@ -17,6 +17,10 @@ vim.opt.list = true
 vim.opt.listchars = { space = '·', tab = '> ', extends = '|' }
 vim.opt.clipboard = 'unnamedplus'
 
+-- Sets incsearch and hlsearch on
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
+
 -- makes it so whenever : is typed, it doesn't reindent
 vim.cmd [[autocmd FileType cpp setlocal indentkeys-=:]]
 vim.cmd [[autocmd FileType c setlocal indentkeys-=:]]
