@@ -72,8 +72,5 @@ return {
                 { name = "cmdline" },
             }),
         })
-        experimental = {
-            ghost_text = true,
-        }
     end,
 }
