@@ -6,7 +6,7 @@ return {
         "nvim-lua/plenary.nvim",
     },
 
-    keys = {"<leader>a", "<leader>h"},
+    keys = "<leader>h",
 
     config = function()
     local harpoon = require("harpoon")
