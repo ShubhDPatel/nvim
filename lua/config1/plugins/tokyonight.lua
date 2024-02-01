@@ -1,7 +1,5 @@
 return {
     "folke/tokyonight.nvim",
-    priority = 1000,
-
     event = "CmdlineEnter",
 
     config = function()
