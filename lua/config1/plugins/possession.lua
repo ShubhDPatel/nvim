@@ -1,5 +1,6 @@
 return {
     "jedrzejboczar/possession.nvim",
+    event = "CmdlineEnter",
     dependencies = {
         "nvim-lua/plenary.nvim",
         "nvim-telescope/telescope.nvim",
