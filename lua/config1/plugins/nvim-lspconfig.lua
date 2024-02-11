@@ -40,5 +40,6 @@ return {
         require("lspconfig").pyright.setup {
             filetypes = { "python" },
         }
+        require("lspconfig").autotools_ls.setup {}
     end,
 }
