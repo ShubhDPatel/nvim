@@ -41,5 +41,6 @@ return {
             filetypes = { "python" },
         }
         require("lspconfig").autotools_ls.setup {}
+        require("lspconfig").cmake.setup {}
     end,
 }
