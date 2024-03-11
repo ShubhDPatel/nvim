@@ -12,6 +12,7 @@ return {
             operators = false,
             folds = false,
         },
+        transparent_mode = false,
     })
 
     vim.cmd("colorscheme gruvbox")
