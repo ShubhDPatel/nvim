@@ -37,3 +37,7 @@ augroup visual_commenting
     autocmd BufEnter * silent! exec 'vnoremap <silent> <C-?> :<C-u>keepp ''<,''>s@^' . b:comment_symbol . '@<CR>'
 augroup END
 ]])
+
+-- Set lazyredraw
+vim.opt.lazyredraw = true
+
