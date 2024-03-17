@@ -43,5 +43,6 @@ return {
         require("lspconfig").autotools_ls.setup {}
         require("lspconfig").cmake.setup {}
         require("lspconfig").dockerls.setup {}
+        require("lspconfig").tsserver.setup {}
     end,
 }
