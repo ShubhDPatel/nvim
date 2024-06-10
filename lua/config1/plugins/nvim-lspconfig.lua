@@ -44,5 +44,6 @@ return {
         require("lspconfig").cmake.setup {}
         require("lspconfig").dockerls.setup {}
         require("lspconfig").tsserver.setup {}
+        require("lspconfig").csharp_ls.setup {}
     end,
 }
