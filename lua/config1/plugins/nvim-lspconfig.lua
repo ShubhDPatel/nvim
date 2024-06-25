@@ -37,9 +37,7 @@ return {
                 'configure.ac', -- AutoTools
             },
         }
-        require("lspconfig").pyright.setup {
-            filetypes = { "python" },
-        }
+        require("lspconfig").pyright.setup {}
         require("lspconfig").autotools_ls.setup {}
         require("lspconfig").cmake.setup {}
         require("lspconfig").dockerls.setup {}
