@@ -4,7 +4,7 @@
 ## sudo apt install ripgrep
 ## sudo apt install fd-find
 ## sudo apt install tmux // Don't need if you don't plan on using tmux
-## sudo apt install wl-clipboard // This is to copy to system clipboard
+## sudo apt install xclip // This is to copy to system clipboard
 ## sudo apt install python3-venv
 ## sudo apt install python3-pip
 ## install node js https://github.com/nodesource/distributions
