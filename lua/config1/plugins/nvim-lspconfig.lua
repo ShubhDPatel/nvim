@@ -41,13 +41,10 @@ return {
         require("lspconfig").autotools_ls.setup {}
         require("lspconfig").cmake.setup {}
         require("lspconfig").dockerls.setup {}
-<<<<<<< HEAD
         require("lspconfig").tsserver.setup {}
         require("lspconfig").omnisharp.setup {}
         require("lspconfig").marksman.setup {}
-=======
         require("lspconfig").ts_ls.setup {}
-        require("lspconfig").csharp_ls.setup {}
->>>>>>> cf7713523b2dbb6c91b595d445a0e9edb76ff603
+        require("lspconfig").rust_analyzer.setup {}
     end,
 }
