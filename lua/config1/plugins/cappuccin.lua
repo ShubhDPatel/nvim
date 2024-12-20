@@ -1,7 +1,7 @@
 return {
     "catppuccin/nvim",
     name = "catppuccin",
-    event = "CmdlineEnter",
+    -- event = "CmdlineEnter",
 
     config = function()
         require("catppuccin").setup({
