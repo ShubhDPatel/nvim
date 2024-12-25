@@ -41,7 +41,7 @@ return {
         require("lspconfig").autotools_ls.setup {}
         require("lspconfig").cmake.setup {}
         require("lspconfig").dockerls.setup {}
-        require("lspconfig").tsserver.setup {}
+        require("lspconfig").ts_ls.setup {}
         require("lspconfig").omnisharp.setup {}
         require("lspconfig").marksman.setup {}
         require("lspconfig").rust_analyzer.setup {}
