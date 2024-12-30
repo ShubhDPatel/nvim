@@ -44,6 +44,5 @@ return {
         require("lspconfig").ts_ls.setup {}
         require("lspconfig").omnisharp.setup {}
         require("lspconfig").marksman.setup {}
-        require("lspconfig").rust_analyzer.setup {}
     end,
 }
